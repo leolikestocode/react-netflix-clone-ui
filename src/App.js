@@ -12,15 +12,15 @@ export default () => {
 
   useEffect(() => {
     const loadAll = async () => {
-      let list = await Tmdb.getHomeList();
+      const list = await Tmdb.getHomeList();
       setMovieList(list);
 
-      let originals = list.filter((i) => i.slug === "originals");
-      let randonChosen = Math.floor(
+      const originals = list.filter(({ slug }) => slug === "originals");
+      const randonChosen = Math.floor(
         Math.random() * (originals[0].items.results.length - 1)
       );
-      let chosen = originals[0].items.results[randonChosen];
-      let chosenInfo = await Tmdb.getMovieInfo(chosen.id, "tv");
+      const chosen = originals[0].items.results[randonChosen];
+      const chosenInfo = await Tmdb.getMovieInfo(chosen.id, "tv");
       setFeaturedData(chosenInfo);
     };
 

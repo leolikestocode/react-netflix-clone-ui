@@ -61,8 +61,8 @@ export default ({ title, items }) => {
           }}
         >
           {items.results.length &&
-            items.results.map((item) => (
-              <div key={item.title} className="movieRow--item">
+            items.results.map((item, index) => (
+              <div key={index} className="movieRow--item">
                 <img
                   src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}
                   alt={item.title}
