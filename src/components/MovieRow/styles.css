@@ -1,5 +1,6 @@
 .movieRow {
   margin-bottom: 30px;
+  position: relative;
 }
 
 .movieRow h2 {
@@ -60,6 +61,18 @@
   opacity: 1;
 }
 
+.indicator-icon {
+  font-size: 2em;
+}
+
+.icon-rightCaret:before {
+  content: "\e867";
+}
+
+.icon-leftCaret:before {
+  content: "\e868";
+}
+
 @media (max-width: 960px) {
   .movieRow--left,
   .movieRow--right {
@@ -77,11 +90,22 @@
 
   .movieRow--list {
     white-space: nowrap;
-    width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     display: inline-block;
-    width: auto !important;
+    width: 100% !important;
+  }
+
+  .movieRow--list::-webkit-scrollbar-track {
+    background: #000;
+  }
+  .movieRow--list::-webkit-scrollbar-thumb {
+    background: #babcbe;
+    border-radius: 8px;
+  }
+  .movieRow--list::-webkit-scrollbar {
+    border-radius: 8px;
+    height: 6px;
   }
 
   .movieRow--item {

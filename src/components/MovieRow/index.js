@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import NavigateBeforeIcon from "@material-ui/icons/NavigateBefore";
-import NavigateNextIcon from "@material-ui/icons/NavigateNext";
 
 import "./styles.css";
 
@@ -38,16 +36,20 @@ export default ({ title, items }) => {
     <div className="movieRow">
       <h2>{title}</h2>
       <div
-        className={`movieRow--left ${hideLeftArrow ? "hide" : ""}`}
+        className={`movieRow--left indicator-icon ${
+          hideLeftArrow ? "hide" : ""
+        }`}
         onClick={handleLeftArrow}
       >
-        <NavigateBeforeIcon style={{ fontSize: 50 }} />
+        <i className="icon-leftCaret" />
       </div>
       <div
-        className={`movieRow--right ${hideRightArrow ? "hide" : ""}`}
+        className={`movieRow--right indicator-icon ${
+          hideRightArrow ? "hide" : ""
+        }`}
         onClick={handleRightArrow}
       >
-        <NavigateNextIcon style={{ fontSize: 50 }} />
+        <i className="icon-rightCaret" />
       </div>
 
       <div className="movieRow--listarea">
