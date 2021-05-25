@@ -13,6 +13,9 @@ A new image is shown is spotlight randomly
 
 ## Images
 
+### Preview
+
+![Gif01](./imgs/Gif01.gif "Gif01")
 ### Desktop 1
 
 ![Screenshot01](./imgs/Screenshot01.png "Screenshot01")
@@ -24,4 +27,3 @@ A new image is shown is spotlight randomly
 ### Desktop 2
 
 ![Screenshot02](./imgs/Screenshot02.png "Screenshot02")
-
