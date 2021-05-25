@@ -4,6 +4,13 @@ Data got from https://api.themoviedb.org/3
 
 Live at: https://leolikestocode.github.io/react-netflix-clone-ui/
 
+A new image is shown is spotlight randomly
+
+## Technologies
+- React
+- Hooks
+- CSS3
+
 ## Images
 
 ### Desktop 1
@@ -17,3 +24,4 @@ Live at: https://leolikestocode.github.io/react-netflix-clone-ui/
 ### Desktop 2
 
 ![Screenshot02](./imgs/Screenshot02.png "Screenshot02")
+
